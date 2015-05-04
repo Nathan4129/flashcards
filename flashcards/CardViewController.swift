@@ -9,11 +9,25 @@
 import UIKit
 
 class CardViewController: UIViewController {
+    @IBOutlet weak var firstWordLabel: UILabel!
     
     var importedCardArray : [Card] = []
-
+    var counter = 0
+    var wordDisplayedFirst = true
+    
     override func viewDidLoad() {
+        
+        if (wordDisplayedFirst)
+        {
+            firstWordLabel.text = importedCardArray[counter].cardWord
+        }
+        else
+        {
+            firstWordLabel.text = importedCardArray[counter].cardDefinition
+        }
+        
+        
         super.viewDidLoad()
-
     }
 }
+
