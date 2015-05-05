@@ -43,9 +43,12 @@
 		3F4F7E2A1AEFD76400B8B7A5 /* flashcardsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = flashcardsTests.swift; sourceTree = "<group>"; };
 		3F4F7E341AEFD78200B8B7A5 /* CardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
 		3F4F7E3A1AF11D1100B8B7A5 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Card.swift; path = ../Card.swift; sourceTree = "<group>"; };
+<<<<<<< HEAD
+=======
 		3FC2FAEC1AF3CB7F0099C408 /* DefinitionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DefinitionViewController.swift; path = ../DefinitionViewController.swift; sourceTree = "<group>"; };
 		3FC2FB1C1AF7BC350099C408 /* Deck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Deck.swift; sourceTree = "<group>"; };
 		3FC2FB1E1AF7BC810099C408 /* CreateNewDeckViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateNewDeckViewController.swift; sourceTree = "<group>"; };
+>>>>>>> 6b890896ba9bbf8f617905c409d09df048a040e5
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,7 +96,11 @@
 				3F4F7E161AEFD76400B8B7A5 /* ViewController.swift */,
 				3FC2FAEC1AF3CB7F0099C408 /* DefinitionViewController.swift */,
 				3F4F7E341AEFD78200B8B7A5 /* CardViewController.swift */,
+<<<<<<< HEAD
+				3F4F7E3A1AF11D1100B8B7A5 /* Card.swift */,
+=======
 				3FC2FB1E1AF7BC810099C408 /* CreateNewDeckViewController.swift */,
+>>>>>>> 6b890896ba9bbf8f617905c409d09df048a040e5
 				3F4F7E181AEFD76400B8B7A5 /* Main.storyboard */,
 				3F4F7E1B1AEFD76400B8B7A5 /* Images.xcassets */,
 				3F4F7E1D1AEFD76400B8B7A5 /* LaunchScreen.xib */,
