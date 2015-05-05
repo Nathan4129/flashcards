@@ -14,20 +14,24 @@ class CreateNewDeckViewController: UIViewController {
     @IBOutlet weak var numberOfCardsTextField: UITextField!
     
     
+    var madeDeck : Deck
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-       
     }
 
     @IBAction func onTappedMakeDeckButton(sender: AnyObject)
     {
         var newDeck = Deck(title: deckTitleTextField.text, subtitle: deckSubtitleTextField.text, numberOfCards : numberOfCardsTextField.text.toInt()!)
+        madeDeck = newDeck
+        
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        <#code#>
+        var dvc = segue.destinationViewController as! CreateNewCardViewController
+        dvc.importedCardDeck = madeDeck
     }
-    
 }
+
