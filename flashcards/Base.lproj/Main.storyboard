@@ -93,10 +93,10 @@
             </objects>
             <point key="canvasLocation" x="201.5" y="-151.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Create New Card View Controller-->
         <scene sceneID="qCN-vB-XTV">
             <objects>
-                <viewController id="OBB-xz-WJT" sceneMemberID="viewController">
+                <viewController id="OBB-xz-WJT" customClass="CreateNewCardViewController" customModule="flashcards" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="9nT-GJ-5PI"/>
                         <viewControllerLayoutGuide type="bottom" id="YmR-Q1-XEc"/>
@@ -104,10 +104,48 @@
                     <view key="view" contentMode="scaleToFill" id="lu7-JU-UyI">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Word" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jec-yB-FsN">
+                                <rect key="frame" x="104" y="149" width="166" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Definition" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6BN-jX-fAl">
+                                <rect key="frame" x="35" y="241" width="304" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3U2-96-1Bp">
+                                <rect key="frame" x="166" y="28" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qcH-xx-p5K">
+                                <rect key="frame" x="164" y="312" width="70" height="30"/>
+                                <state key="normal" title="Add Card.">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="addCardButtonTapped:" destination="OBB-xz-WJT" eventType="touchUpInside" id="TCO-zX-gHP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lOj-EH-krR">
+                                <rect key="frame" x="176" y="495" width="62" height="30"/>
+                                <state key="normal" title="Finished.">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="counterLabel" destination="3U2-96-1Bp" id="rOG-3G-P2x"/>
+                        <outlet property="wordDefinitionTextField" destination="6BN-jX-fAl" id="wP5-pE-qup"/>
+                        <outlet property="wordTextField" destination="Jec-yB-FsN" id="mny-gJ-y5r"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9pY-M5-vLs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

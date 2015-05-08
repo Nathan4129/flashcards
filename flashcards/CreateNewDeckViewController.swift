@@ -9,12 +9,13 @@
 import UIKit
 
 class CreateNewDeckViewController: UIViewController {
+    
     @IBOutlet weak var deckTitleTextField: UITextField!
     @IBOutlet weak var deckSubtitleTextField: UITextField!
     @IBOutlet weak var numberOfCardsTextField: UITextField!
     
     
-    var madeDeck : Deck
+    var madeDeck : Deck!
     
 
     override func viewDidLoad() {
