@@ -11,7 +11,7 @@ import UIKit
 class CreateNewCardViewController: UIViewController {
     
     var counter = 0
-    var importedCardDeck : Deck!
+    var importedCardDeck = Deck()
     @IBOutlet weak var counterLabel: UILabel!
     @IBOutlet weak var wordDefinitionTextField: UITextField!
     @IBOutlet weak var wordTextField: UITextField!

@@ -15,7 +15,7 @@ class CreateNewDeckViewController: UIViewController {
     @IBOutlet weak var numberOfCardsTextField: UITextField!
     
     
-    var madeDeck : Deck!
+    var madeDeck = Deck()
     
 
     override func viewDidLoad() {
