@@ -14,6 +14,7 @@ class DefinitionViewController: UIViewController {
     var importedCardArray : [Card] = []
     var wantedDisplayValue = false
     var counter = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

@@ -13,14 +13,12 @@ class Deck: NSObject
     var cardArray : [Card] = []
     var title = ""
     var subtitle = ""
-    var numberOfCards = 0
     
-    convenience init(title : String, subtitle : String, numberOfCards : Int)
+    convenience init(title : String, subtitle : String)
     {
         self.init()
         self.title = title
         self.subtitle = subtitle
-        self.numberOfCards = numberOfCards
     }
     
 }
