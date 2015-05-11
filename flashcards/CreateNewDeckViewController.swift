@@ -12,7 +12,6 @@ class CreateNewDeckViewController: UIViewController {
     
     @IBOutlet weak var deckTitleTextField: UITextField!
     @IBOutlet weak var deckSubtitleTextField: UITextField!
-    @IBOutlet weak var numberOfCardsTextField: UITextField!
     
     
     var madeDeck = Deck()
@@ -25,7 +24,7 @@ class CreateNewDeckViewController: UIViewController {
 
     @IBAction func onTappedMakeDeckButton(sender: AnyObject)
     {
-        var newDeck = Deck(title: deckTitleTextField.text, subtitle: deckSubtitleTextField.text, numberOfCards : numberOfCardsTextField.text.toInt()!)
+        var newDeck = Deck(title: deckTitleTextField.text, subtitle: deckSubtitleTextField.text)
         madeDeck = newDeck
         
     }
