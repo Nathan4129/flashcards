@@ -29,8 +29,7 @@ class CreateNewCardViewController: UIViewController {
         {
             if wordTextField.text != nil && wordTextField.text != ""
             {
-                importedCardDeck.cardArray[counter].cardWord = wordTextField.text
-                importedCardDeck.cardArray[counter].cardDefinition = wordDefinitionTextField.text
+                
                 counter++
             }
         }
