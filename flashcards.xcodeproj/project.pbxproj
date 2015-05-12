@@ -15,6 +15,7 @@
 		3F4F7E2B1AEFD76400B8B7A5 /* flashcardsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4F7E2A1AEFD76400B8B7A5 /* flashcardsTests.swift */; };
 		3F4F7E351AEFD78200B8B7A5 /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4F7E341AEFD78200B8B7A5 /* CardViewController.swift */; };
 		3F4F7E3B1AF11D1100B8B7A5 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4F7E3A1AF11D1100B8B7A5 /* Card.swift */; };
+		3F9240C11B02478600F55A25 /* DeckListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9240C01B02478600F55A25 /* DeckListViewController.swift */; };
 		3FC2FAED1AF3CB7F0099C408 /* DefinitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC2FAEC1AF3CB7F0099C408 /* DefinitionViewController.swift */; };
 		3FC2FB1D1AF7BC350099C408 /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC2FB1C1AF7BC350099C408 /* Deck.swift */; };
 		3FC2FB1F1AF7BC810099C408 /* CreateNewDeckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC2FB1E1AF7BC810099C408 /* CreateNewDeckViewController.swift */; };
@@ -44,6 +45,7 @@
 		3F4F7E2A1AEFD76400B8B7A5 /* flashcardsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = flashcardsTests.swift; sourceTree = "<group>"; };
 		3F4F7E341AEFD78200B8B7A5 /* CardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
 		3F4F7E3A1AF11D1100B8B7A5 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Card.swift; path = ../Card.swift; sourceTree = "<group>"; };
+		3F9240C01B02478600F55A25 /* DeckListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeckListViewController.swift; sourceTree = "<group>"; };
 		3FC2FAEC1AF3CB7F0099C408 /* DefinitionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DefinitionViewController.swift; path = ../DefinitionViewController.swift; sourceTree = "<group>"; };
 		3FC2FB1C1AF7BC350099C408 /* Deck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Deck.swift; sourceTree = "<group>"; };
 		3FC2FB1E1AF7BC810099C408 /* CreateNewDeckViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateNewDeckViewController.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 				3FC2FB1E1AF7BC810099C408 /* CreateNewDeckViewController.swift */,
 				3FC2FB201AF90DBD0099C408 /* CreateNewCardViewController.swift */,
 				3F4F7E181AEFD76400B8B7A5 /* Main.storyboard */,
+				3F9240C01B02478600F55A25 /* DeckListViewController.swift */,
 				3F4F7E1B1AEFD76400B8B7A5 /* Images.xcassets */,
 				3F4F7E1D1AEFD76400B8B7A5 /* LaunchScreen.xib */,
 				3F4F7E121AEFD76400B8B7A5 /* Supporting Files */,
@@ -231,6 +234,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3FC2FB1F1AF7BC810099C408 /* CreateNewDeckViewController.swift in Sources */,
+				3F9240C11B02478600F55A25 /* DeckListViewController.swift in Sources */,
 				3FC2FB211AF90DBD0099C408 /* CreateNewCardViewController.swift in Sources */,
 				3FC2FB1D1AF7BC350099C408 /* Deck.swift in Sources */,
 				3F4F7E171AEFD76400B8B7A5 /* ViewController.swift in Sources */,
