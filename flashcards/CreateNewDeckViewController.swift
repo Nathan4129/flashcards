@@ -13,6 +13,10 @@ class CreateNewDeckViewController: UIViewController {
     @IBOutlet weak var deckTitleTextField: UITextField!
     @IBOutlet weak var deckSubtitleTextField: UITextField!
     
+    @IBAction func tapGestureRecognizer(sender: AnyObject)
+    {
+        view.endEditing(true)
+    }
     
     var madeDeck = Deck()
     
