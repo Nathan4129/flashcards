@@ -127,19 +127,38 @@
                                     <color key="titleColor" red="1" green="0.6278932223" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="vXZ-lx-hvc" kind="show" id="6nN-3D-nAD"/>
+                                </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You have no cards in this deck." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iHG-wy-BML">
+                                <rect key="frame" x="49" y="441" width="276" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="LFd-sS-DZK" appends="YES" id="dE3-Lx-vb0"/>
+                        </connections>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="cardCounterLabel" destination="iHG-wy-BML" id="KNN-7e-85t"/>
                         <outlet property="counterLabel" destination="3U2-96-1Bp" id="rOG-3G-P2x"/>
                         <outlet property="wordDefinitionTextField" destination="6BN-jX-fAl" id="wP5-pE-qup"/>
                         <outlet property="wordTextField" destination="Jec-yB-FsN" id="mny-gJ-y5r"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9pY-M5-vLs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="LFd-sS-DZK">
+                    <connections>
+                        <action selector="tapGestureRecognizer:" destination="OBB-xz-WJT" id="KXL-s8-wki"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1507.5" y="-151.5"/>
         </scene>
@@ -227,4 +246,7 @@
     <resources>
         <image name="flashcards_logo" width="500" height="132"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="6nN-3D-nAD"/>
+    </inferredMetricsTieBreakers>
 </document>
