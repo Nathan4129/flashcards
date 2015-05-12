@@ -12,4 +12,11 @@ class Card: NSObject {
     var cardDefinition = ""
     var cardWord = ""
    
+    convenience init(cardWord : String, cardDefinition : String)
+    {
+        self.init()
+        self.cardWord = cardWord
+        self.cardDefinition = cardDefinition
+    }
+    
 }

@@ -15,7 +15,12 @@ class CreateNewCardViewController: UIViewController {
     @IBOutlet weak var counterLabel: UILabel!
     @IBOutlet weak var wordDefinitionTextField: UITextField!
     @IBOutlet weak var wordTextField: UITextField!
+    @IBOutlet weak var cardCounterLabel: UILabel!
     
+    @IBAction func tapGestureRecognizer(sender: AnyObject)
+    {
+        view.endEditing(true)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,10 +34,24 @@ class CreateNewCardViewController: UIViewController {
         {
             if wordTextField.text != nil && wordTextField.text != ""
             {
-                
+                var theCard = Card(cardWord: wordTextField.text, cardDefinition: wordDefinitionTextField.text)
+                importedCardDeck.cardArray.append(theCard)
                 counter++
+                cardCounterLabel.text = "You now have \(counter) cards in your deck."
             }
         }
     }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
