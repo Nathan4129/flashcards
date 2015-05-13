@@ -24,9 +24,7 @@ class DeckListViewController: UIViewController, UITableViewDelegate, UITableView
 
         return cell
 
-<<<<<<< HEAD
-    var deckListArray : [Deck] = []
-=======
+
     }
     
     func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
