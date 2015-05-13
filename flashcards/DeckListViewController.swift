@@ -10,6 +10,8 @@ import UIKit
 
 class DeckListViewController: UIViewController {
 
+    var deckListArray : [Deck] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
