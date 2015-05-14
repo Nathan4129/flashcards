@@ -34,6 +34,16 @@ class DeckListViewController: UIViewController, UITableViewDelegate, UITableView
         }
     }
     
+    func tableView(tableView: UITableView, canMoveRowAtIndexPath indexPath: NSIndexPath) -> Bool {
+        return true
+    }
+    
+    func tableView(tableView: UITableView, moveRowAtIndexPath sourceIndexPath: NSIndexPath, toIndexPath destinationIndexPath: NSIndexPath) {
+        var deck = decks[sourceIndexPath.row]
+        decks.removeAtIndex(sourceIndexPath.row)
+        decks.insert(deck, atIndex: destinationIndexPath.row)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
