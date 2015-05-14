@@ -33,7 +33,6 @@ class DeckListViewController: UIViewController, UITableViewDelegate, UITableView
             tableView.reloadData()
         }
     }
->>>>>>> a141c95472f118ec8d6965dfb41c00e3965f140f
     
     override func viewDidLoad() {
         super.viewDidLoad()
