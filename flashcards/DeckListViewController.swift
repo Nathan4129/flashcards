@@ -44,7 +44,21 @@ class DeckListViewController: UIViewController, UITableViewDelegate, UITableView
         decks.insert(deck, atIndex: destinationIndexPath.row)
     }
     
+    @IBOutlet weak var editButton: UIBarButtonItem!
+    @IBAction func onTappedEditButton(sender: UIBarButtonItem) {
+        if sender.tag == 0 {
+            tableView.editing = true
+            sender.tag = 1
+        }
+        else {
+            tableView.editing = false
+            sender.tag = 0
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        editButton.tag = 0
     }
 }
