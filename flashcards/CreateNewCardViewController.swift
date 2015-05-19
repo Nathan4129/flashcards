@@ -9,7 +9,7 @@
 import UIKit
 
 class CreateNewCardViewController: UIViewController {
-    
+
     var counter = 0
     var importedCardDeck = Deck()
     @IBOutlet weak var counterLabel: UILabel!
@@ -41,9 +41,11 @@ class CreateNewCardViewController: UIViewController {
             }
         }
     }
-
+   override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        var dvc = segue.destinationViewController as! ViewController
+        dvc.importedCardDeck = importedCardDeck
+    }
 }
-
 
 
 
