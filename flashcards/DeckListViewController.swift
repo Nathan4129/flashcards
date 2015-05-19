@@ -10,13 +10,22 @@ import UIKit
 
 class DeckListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    var importedCardDeck : Deck = Deck()
+    
     @IBOutlet weak var tableView: UITableView!
     
-    var decks = ["1", "2", "3", "4"]    // placeholder Array for Table View
+    //var decks : [Deck] = []  // placeholder Array for Table View
+    var decks = [""]
+    /*if importedCardDeck != nil
+    {
+        decks.append(importedCardDeck)
+    }*/
+    
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         return decks.count
     }
+    
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cell = tableView.dequeueReusableCellWithIdentifier("MyCell", forIndexPath: indexPath) as! UITableViewCell

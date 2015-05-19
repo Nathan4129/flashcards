@@ -10,9 +10,15 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var importedCardDeck = Deck()
     
+    @IBAction func toDeckListButtonOnTapped(sender: AnyObject) {
+         func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+            var dvc = segue.destinationViewController as! DeckListViewController
+            dvc.importedCardDeck = importedCardDeck
+        }
+    }
     override func viewDidLoad() {
-        
         super.viewDidLoad()
     }
 }
