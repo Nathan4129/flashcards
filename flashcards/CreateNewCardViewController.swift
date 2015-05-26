@@ -38,6 +38,9 @@ class CreateNewCardViewController: UIViewController {
                 importedCardDeck.cardArray.append(theCard)
                 counter++
                 cardCounterLabel.text = "You now have \(counter) cards in your deck."
+                
+                wordDefinitionTextField.text = ""
+                wordTextField.text = ""
             }
         }
     }

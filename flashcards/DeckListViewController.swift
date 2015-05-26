@@ -10,16 +10,15 @@ import UIKit
 
 class DeckListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    var pickedDeck : Deck = Deck()
+    var counter = 0
     var importedCardDeck : Deck = Deck()
     
     @IBOutlet weak var tableView: UITableView!
     
     //var decks : [Deck] = []  // placeholder Array for Table View
-    var decks = [""]
-    /*if importedCardDeck != nil
-    {
-        decks.append(importedCardDeck)
-    }*/
+    var decks : [Deck] = []
+    
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
@@ -27,14 +26,7 @@ class DeckListViewController: UIViewController, UITableViewDelegate, UITableView
     }
     
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var cell = tableView.dequeueReusableCellWithIdentifier("MyCell", forIndexPath: indexPath) as! UITableViewCell
-        cell.textLabel?.text = decks[indexPath.row]
-
-        return cell
-
-
-    }
+    
     
     func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
         if editingStyle == UITableViewCellEditingStyle.Delete {
@@ -68,6 +60,56 @@ class DeckListViewController: UIViewController, UITableViewDelegate, UITableView
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+            decks.append(importedCardDeck)
+        
+        
         editButton.tag = 0
     }
+    
+    
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        var cell = tableView.dequeueReusableCellWithIdentifier("MyCell", forIndexPath: indexPath) as! UITableViewCell
+        for var i = 0; i < decks.endIndex; i++
+        {
+            cell.textLabel!.text = decks[i].title
+        }
+        
+        var index = tableView.indexPathForSelectedRow()?.row
+        
+        pickedDeck = decks[index!]
+        
+        return cell
+        
+        
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        var dvc = segue.destinationViewController as! StartScreenViewController
+        
+        dvc.importedCardDeck = pickedDeck
+        dvc.importedNumber = pickedDeck.cardArray.count
+           
+        
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
