@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F22CCB41B17635D000F73CC /* DeckCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F22CCB31B17635D000F73CC /* DeckCollection.swift */; };
 		3F4F7E151AEFD76400B8B7A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4F7E141AEFD76400B8B7A5 /* AppDelegate.swift */; };
 		3F4F7E171AEFD76400B8B7A5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4F7E161AEFD76400B8B7A5 /* ViewController.swift */; };
 		3F4F7E1A1AEFD76400B8B7A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F4F7E181AEFD76400B8B7A5 /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F22CCB31B17635D000F73CC /* DeckCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeckCollection.swift; sourceTree = "<group>"; };
 		3F4F7E0F1AEFD76400B8B7A5 /* flashcards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = flashcards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F4F7E131AEFD76400B8B7A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F4F7E141AEFD76400B8B7A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 				3F4F7E141AEFD76400B8B7A5 /* AppDelegate.swift */,
 				3F4F7E3A1AF11D1100B8B7A5 /* Card.swift */,
 				3FC2FB1C1AF7BC350099C408 /* Deck.swift */,
+				3F22CCB31B17635D000F73CC /* DeckCollection.swift */,
 				3F4F7E161AEFD76400B8B7A5 /* ViewController.swift */,
 				3FC2FAEC1AF3CB7F0099C408 /* DefinitionViewController.swift */,
 				3F4F7E341AEFD78200B8B7A5 /* CardViewController.swift */,
@@ -246,6 +249,7 @@
 				3F4F7E3B1AF11D1100B8B7A5 /* Card.swift in Sources */,
 				3FC2FAED1AF3CB7F0099C408 /* DefinitionViewController.swift in Sources */,
 				3F9240C31B0B7FEF00F55A25 /* StartScreenViewController.swift in Sources */,
+				3F22CCB41B17635D000F73CC /* DeckCollection.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

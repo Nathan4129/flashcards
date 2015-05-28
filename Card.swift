@@ -11,6 +11,7 @@ import UIKit
 class Card: NSObject {
     var cardDefinition = ""
     var cardWord = ""
+    
    
     convenience init(cardWord : String, cardDefinition : String)
     {

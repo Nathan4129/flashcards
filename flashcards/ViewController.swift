@@ -15,7 +15,8 @@ class ViewController: UIViewController {
     @IBAction func toDeckListButtonOnTapped(sender: AnyObject) {
          func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
             var dvc = segue.destinationViewController as! DeckListViewController
-            dvc.importedCardDeck = importedCardDeck
+            
+            dvc.decks.append(importedCardDeck)
         }
     }
     override func viewDidLoad() {
