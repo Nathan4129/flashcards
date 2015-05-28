@@ -71,14 +71,11 @@ class DeckListViewController: UIViewController, UITableViewDelegate, UITableView
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cell = tableView.dequeueReusableCellWithIdentifier("MyCell", forIndexPath: indexPath) as! UITableViewCell
-        for var i = 0; i < decks.endIndex; i++
+        for var i = 0; i < decks.count; i++
         {
-            cell.textLabel!.text = decks[i].title
+            cell.textLabel!.text = decks[indexPath.row].title
         }
         
-        var index = tableView.indexPathForSelectedRow()?.row
-        
-        pickedDeck = decks[index!]
         
         return cell
         
@@ -87,6 +84,10 @@ class DeckListViewController: UIViewController, UITableViewDelegate, UITableView
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         var dvc = segue.destinationViewController as! StartScreenViewController
+        
+        var index = tableView.indexPathForSelectedRow()?.row
+        
+        pickedDeck = decks[index!]
         
         dvc.importedCardDeck = pickedDeck
         dvc.importedNumber = pickedDeck.cardArray.count
