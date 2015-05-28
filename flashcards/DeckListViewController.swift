@@ -14,13 +14,8 @@ class DeckListViewController: UIViewController, UITableViewDelegate, UITableView
     
     @IBOutlet weak var tableView: UITableView!
     
-    //var decks : [Deck] = []  // placeholder Array for Table View
     var decks = [""]
-    /*if importedCardDeck != nil
-    {
-        decks.append(importedCardDeck)
-    }*/
-    
+
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         return decks.count
